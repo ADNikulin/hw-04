@@ -42,7 +42,6 @@
   > ![image](https://github.com/user-attachments/assets/089af575-e404-4632-b02f-076d753122ed)
 
 </details>
-------
 
 ### Задание 2
 <details>
