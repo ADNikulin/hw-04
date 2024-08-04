@@ -160,7 +160,7 @@
 
   1. Используя готовый yandex cloud terraform module и пример его вызова(examples/simple-bucket): https://github.com/terraform-yc-modules/terraform-yc-s3 .
   Создайте и не удаляйте для себя s3 бакет размером 1 ГБ(это бесплатно), он пригодится вам в ДЗ к 5 лекции.
-  2. [Tag Solution-6](https://github.com/ADNikulin/hw-04/tree/solution-6)
+  2. Tag Solution-6
    
 </details>
 
@@ -202,19 +202,11 @@
      > ![image](https://github.com/user-attachments/assets/f577400e-7fe2-488a-9290-d8d3ff0f0f0e)
      > ![image](https://github.com/user-attachments/assets/988ac74a-4623-45ec-b6c8-7a2a5dcbc03e)
 
-5. Попробуйте самостоятельно разобраться в документации и записать новый секрет в vault с помощью terraform.
-   > ![image](https://github.com/user-attachments/assets/ac735fbd-758f-4dc7-9172-b8ca9a36d76d)
-   > ![image](https://github.com/user-attachments/assets/4167fb0f-5121-4829-997c-db28a2456d97)
-   > ![image](https://github.com/user-attachments/assets/c01893fd-d246-4ea6-b0ce-cd688fd77a3a)
+  5. Попробуйте самостоятельно разобраться в документации и записать новый секрет в vault с помощью terraform.
+     > ![image](https://github.com/user-attachments/assets/ac735fbd-758f-4dc7-9172-b8ca9a36d76d)
+     > ![image](https://github.com/user-attachments/assets/4167fb0f-5121-4829-997c-db28a2456d97)
+     > ![image](https://github.com/user-attachments/assets/c01893fd-d246-4ea6-b0ce-cd688fd77a3a)
 
-7. [Tag Solution-7](https://github.com/ADNikulin/hw-04/tree/solution-7)
+  7. [Tag Solution-7](https://github.com/ADNikulin/hw-04/tree/solution-7)
    
-</details>
-
-### Задание 8*
-<details>
-  <summary>Раскрыть</summary>
-
-  Попробуйте самостоятельно разобраться в документаци и с помощью terraform remote state разделить root модуль на два отдельных root-модуля: создание VPC , создание ВМ . 
-  
 </details>
