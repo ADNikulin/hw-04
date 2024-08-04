@@ -35,6 +35,12 @@
   Воспользуйтесь [**примером**](https://grantorchard.com/dynamic-cloudinit-content-with-terraform-file-templates/). Обратите внимание, что ssh-authorized-keys принимает в себя список, а не строку.
   3. Добавьте в файл cloud-init.yml установку nginx.
   4. Предоставьте скриншот подключения к консоли и вывод команды ```sudo nginx -t```, скриншот консоли ВМ yandex cloud с их метками. Откройте terraform console и предоставьте скриншот содержимого модуля. Пример: > module.marketing_vm
+
+  > ![image](https://github.com/user-attachments/assets/8b69a211-c93b-403f-9916-4f71a91c8740)
+  > ![image](https://github.com/user-attachments/assets/5916a996-5dcc-4b06-9a02-99ee07772932)
+  > ![image](https://github.com/user-attachments/assets/fec3d5d7-0c35-4d30-b7d1-0f544505d7aa)
+  > ![image](https://github.com/user-attachments/assets/089af575-e404-4632-b02f-076d753122ed)
+
 </details>
 ------
 
