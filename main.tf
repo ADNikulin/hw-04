@@ -30,8 +30,8 @@ module "test-vm" {
   source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   env_name       = var.env-develop
   network_id     = module.nw-netology.vpc_network.network_id
-  subnet_zones   = [module.nw-netology.vpc_subnet.zone]
-  subnet_ids     = [module.nw-netology.vpc_subnet.subnet_id]
+  subnet_zones   = module.nw-netology.vpc_subnets[*].zone
+  subnet_ids     = module.nw-netology.vpc_subnets[*].subnet_id
   instance_name  = "${var.vm_instance-settings.test.name}-${var.env-develop}"
   instance_count = var.vm_instance-settings.test.count
   image_family   = var.family_os-ubuntu-name
@@ -52,8 +52,8 @@ module "example-vm" {
   source         = "git::https://github.com/udjin10/yandex_compute_instance.git?ref=main"
   env_name       = var.env-stage
   network_id     = module.nw-netology.vpc_network.network_id
-  subnet_zones   = [module.nw-netology.vpc_subnet.zone]
-  subnet_ids     = [module.nw-netology.vpc_subnet.subnet_id]
+  subnet_zones   = module.nw-netology.vpc_subnets[*].zone
+  subnet_ids     = module.nw-netology.vpc_subnets[*].subnet_id
   instance_name  = "${var.vm_instance-settings.example.name}-${var.env-stage}"
   instance_count = var.vm_instance-settings.example.count
   image_family   = var.family_os-ubuntu-name

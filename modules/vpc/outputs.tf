@@ -1,11 +1,11 @@
-output "vpc_subnet" {
-  value = {
-    name       = yandex_vpc_subnet.vpc_subnet_instance.name,
-    zone       = yandex_vpc_subnet.vpc_subnet_instance.zone,
-    network_id = yandex_vpc_subnet.vpc_subnet_instance.network_id,
-    cidr       = yandex_vpc_subnet.vpc_subnet_instance.v4_cidr_blocks
-    subnet_id  = yandex_vpc_subnet.vpc_subnet_instance.id
-  }
+output "vpc_subnets" {
+  value = [for itm in yandex_vpc_subnet.vpc_subnet_instance : {
+    name       = itm.name,
+    zone       = itm.zone,
+    network_id = itm.network_id,
+    cidr       = itm.v4_cidr_blocks
+    subnet_id  = itm.id
+  }]
 }
 
 output "vpc_network" {
