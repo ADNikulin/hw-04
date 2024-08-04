@@ -47,7 +47,7 @@ variable "vm_db_name" {
   description = "example vm_db_ prefix"
 }
 
-variable "path_to_meta_data_user" {
+variable "path_to_ssh_key" {
   default     = "proto user for vm data"
   type        = string
 }
