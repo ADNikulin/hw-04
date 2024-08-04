@@ -1,0 +1,4 @@
+token  =  ""
+cloud_id  = ""
+folder_id = ""
+path_to_meta_data_user = "/path/to/metadata/user.meta.yaml"
