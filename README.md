@@ -35,11 +35,12 @@
   Воспользуйтесь [**примером**](https://grantorchard.com/dynamic-cloudinit-content-with-terraform-file-templates/). Обратите внимание, что ssh-authorized-keys принимает в себя список, а не строку.
   3. Добавьте в файл cloud-init.yml установку nginx.
   4. Предоставьте скриншот подключения к консоли и вывод команды ```sudo nginx -t```, скриншот консоли ВМ yandex cloud с их метками. Откройте terraform console и предоставьте скриншот содержимого модуля. Пример: > module.marketing_vm
-
-  > ![image](https://github.com/user-attachments/assets/8b69a211-c93b-403f-9916-4f71a91c8740)
-  > ![image](https://github.com/user-attachments/assets/5916a996-5dcc-4b06-9a02-99ee07772932)
-  > ![image](https://github.com/user-attachments/assets/fec3d5d7-0c35-4d30-b7d1-0f544505d7aa)
-  > ![image](https://github.com/user-attachments/assets/089af575-e404-4632-b02f-076d753122ed)
+     >
+     > ![image](https://github.com/user-attachments/assets/8b69a211-c93b-403f-9916-4f71a91c8740)
+     > ![image](https://github.com/user-attachments/assets/5916a996-5dcc-4b06-9a02-99ee07772932)
+     > ![image](https://github.com/user-attachments/assets/fec3d5d7-0c35-4d30-b7d1-0f544505d7aa)
+     > ![image](https://github.com/user-attachments/assets/089af575-e404-4632-b02f-076d753122ed)
+  5. [Tag Solution-1](https://github.com/ADNikulin/hw-04/tree/solution-1)
 
 </details>
 
@@ -67,6 +68,8 @@
   5. Сгенерируйте документацию к модулю с помощью terraform-docs.
      > [пример](https://github.com/ADNikulin/hw-04/blob/solution-2/requiremets.md)
 
+  6. [Tag Solution-2](https://github.com/ADNikulin/hw-04/tree/solution-2)
+
 </details>
 
 ### Задание 3
@@ -89,6 +92,7 @@
      > ![image](https://github.com/user-attachments/assets/ed17998e-3ba8-4398-aba7-d3fcb0153421) \
      > ![image](https://github.com/user-attachments/assets/08509649-c562-49ef-a15a-ae3a6d64cbd3)
 
+  8. [Tag Solution-3](https://github.com/ADNikulin/hw-04/tree/solution-3)
 </details>
 
 ## Дополнительные задания (со звёздочкой*)
@@ -126,6 +130,16 @@
 
   Предоставьте код, план выполнения, результат из консоли YC.
 
+  > Сделал примитивный вариант: где нет проверок на уникальность элементов из входящего массива. и + исправил выходные данные
+  > ![image](https://github.com/user-attachments/assets/a57f3e16-f82f-4f20-a0db-14136eb64299) \
+  > ![image](https://github.com/user-attachments/assets/2d909487-8cf3-4ec0-89f3-56c43558fd4d) \
+  > ![image](https://github.com/user-attachments/assets/3d423b25-a971-434c-b829-e1d1e0dbb632) \
+  > ![image](https://github.com/user-attachments/assets/ffc1e675-2578-42cb-a2ae-459cfdfda72b) \
+  > ![image](https://github.com/user-attachments/assets/2659aaba-7f7e-4bc3-a131-794d19d3b36f) \
+
+  
+  > [Tag Solution-4](https://github.com/ADNikulin/hw-04/tree/solution-4)
+
 </details>
 
 ### Задание 5*
@@ -136,6 +150,7 @@
   2. Напишите модуль для создания базы данных и пользователя в уже существующем кластере managed БД Mysql. Используйте ресурсы yandex_mdb_mysql_database и yandex_mdb_mysql_user: передайте имя базы данных, имя пользователя и id кластера при вызове модуля.
   3. Используя оба модуля, создайте кластер example из одного хоста, а затем добавьте в него БД test и пользователя app. Затем измените переменную и превратите сингл хост в кластер из 2-х серверов.
   4. Предоставьте план выполнения и по возможности результат. Сразу же удаляйте созданные ресурсы, так как кластер может стоить очень дорого. Используйте минимальную конфигурацию.
+  5. [Tag Solution-5](https://github.com/ADNikulin/hw-04/tree/solution-5)
 
 </details>
 
@@ -145,6 +160,8 @@
 
   1. Используя готовый yandex cloud terraform module и пример его вызова(examples/simple-bucket): https://github.com/terraform-yc-modules/terraform-yc-s3 .
   Создайте и не удаляйте для себя s3 бакет размером 1 ГБ(это бесплатно), он пригодится вам в ДЗ к 5 лекции.
+  2. [Tag Solution-6](https://github.com/ADNikulin/hw-04/tree/solution-6)
+   
 </details>
 
 ### Задание 7*
@@ -152,11 +169,17 @@
   <summary>Раскрыть</summary>
 
   1. Разверните у себя локально vault, используя docker-compose.yml в проекте.
+     > ![image](https://github.com/user-attachments/assets/333b43eb-8077-48f4-a28f-1b8120359e15)
+     > ![image](https://github.com/user-attachments/assets/7ad8d8b6-cf96-4b77-8acc-f5b4b206b74d)
   2. Для входа в web-интерфейс и авторизации terraform в vault используйте токен "education".
+     > ![image](https://github.com/user-attachments/assets/21d0acc8-6f4f-4fe9-8f13-c19fad1e4c59)
+     
   3. Создайте новый секрет по пути http://127.0.0.1:8200/ui/vault/secrets/secret/create
      Path: example  
      secret data key: test 
-     secret data value: congrats!  
+     secret data value: congrats!
+     > ![image](https://github.com/user-attachments/assets/489cd5a5-e8d0-4f89-970d-771a54d22e55)
+
   4. Считайте этот секрет с помощью terraform и выведите его в output по примеру:
      ```
      provider "vault" {
@@ -176,7 +199,16 @@
      Можно обратиться не к словарю, а конкретному ключу:
      terraform console: >nonsensitive(data.vault_generic_secret.vault_example.data.<имя ключа в секрете>)
      ```
-5. Попробуйте самостоятельно разобраться в документации и записать новый секрет в vault с помощью terraform. 
+     > ![image](https://github.com/user-attachments/assets/f577400e-7fe2-488a-9290-d8d3ff0f0f0e)
+     > ![image](https://github.com/user-attachments/assets/988ac74a-4623-45ec-b6c8-7a2a5dcbc03e)
+
+5. Попробуйте самостоятельно разобраться в документации и записать новый секрет в vault с помощью terraform.
+   > ![image](https://github.com/user-attachments/assets/ac735fbd-758f-4dc7-9172-b8ca9a36d76d)
+   > ![image](https://github.com/user-attachments/assets/4167fb0f-5121-4829-997c-db28a2456d97)
+   > ![image](https://github.com/user-attachments/assets/c01893fd-d246-4ea6-b0ce-cd688fd77a3a)
+
+7. [Tag Solution-7](https://github.com/ADNikulin/hw-04/tree/solution-7)
+   
 </details>
 
 ### Задание 8*
@@ -184,4 +216,5 @@
   <summary>Раскрыть</summary>
 
   Попробуйте самостоятельно разобраться в документаци и с помощью terraform remote state разделить root модуль на два отдельных root-модуля: создание VPC , создание ВМ . 
+  
 </details>
