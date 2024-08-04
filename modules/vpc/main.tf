@@ -1,6 +1,6 @@
 locals {
-  network_name    = "${var.environment_name}-${var.network_name}"
-  subnebt_name    = "${var.environment_name}-${var.network_name}-subnet-a"
+  network_name    = var.environment_name == var.network_name ? var.network_name : "${var.environment_name}-${var.network_name}"
+  subnebt_name    = var.environment_name == var.network_name ? "${var.network_name}-${var.network_zone}" : "${var.environment_name}-${var.network_name}-${var.network_zone}"
   subnet_zone     = var.network_zone
   subnet_ip_bloks = var.network_vpc_cidr_blocks
   labels = length(keys(var.network_labels)) > 0 ? var.network_labels : {
