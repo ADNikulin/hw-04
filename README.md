@@ -49,21 +49,25 @@
   <summary>Раскрыть</summary>
 
   1. Напишите локальный модуль vpc, который будет создавать 2 ресурса: **одну** сеть и **одну** подсеть в зоне, объявленной при вызове модуля, например: ```ru-central1-a```.
-  2. Вы должны передать в модуль переменные с названием сети, zone и v4_cidr_blocks.
-  3. Модуль должен возвращать в root module с помощью output информацию о yandex_vpc_subnet. Пришлите скриншот информации из terraform console о своем модуле. Пример: > module.vpc_dev  
-  4. Замените ресурсы yandex_vpc_network и yandex_vpc_subnet созданным модулем. Не забудьте передать необходимые параметры сети из модуля vpc в модуль с виртуальной машиной.
-  5. Сгенерируйте документацию к модулю с помощью terraform-docs.
-  
-  Пример вызова:
+     > ![image](https://github.com/user-attachments/assets/d6052cfc-9e0a-4270-af25-d591e2031669) \
+     > ![image](https://github.com/user-attachments/assets/3e325017-8dfa-4ed5-a311-5a6deae1e3ca)
 
-  ```
-  module "vpc_dev" {
-    source       = "./vpc"
-    env_name     = "develop"
-    zone = "ru-central1-a"
-    cidr = "10.0.1.0/24"
-  }
-  ```
+  2. Вы должны передать в модуль переменные с названием сети, zone и v4_cidr_blocks.
+     > ![image](https://github.com/user-attachments/assets/2b4d7936-2e5e-4e03-acff-b88c2929d1e4)
+
+  3. Модуль должен возвращать в root module с помощью output информацию о yandex_vpc_subnet. Пришлите скриншот информации из terraform console о своем модуле. Пример: > module.vpc_dev
+     > ![image](https://github.com/user-attachments/assets/4ffdfd6b-0cf0-4904-8bb4-27f526c81c44) \
+     > ![image](https://github.com/user-attachments/assets/69af52cb-6d27-474c-bd12-91b324a70d51)
+
+  4. Замените ресурсы yandex_vpc_network и yandex_vpc_subnet созданным модулем. Не забудьте передать необходимые параметры сети из модуля vpc в модуль с виртуальной машиной.
+     > ![image](https://github.com/user-attachments/assets/a0ecd140-b8a8-48f5-a412-6a7806b246ec) \
+     > ![image](https://github.com/user-attachments/assets/bdf480e0-d9e4-4c54-afec-d75de48415a3) \
+     > ![image](https://github.com/user-attachments/assets/95b188ec-43c0-417d-bfac-c7208ae1d5ad) \
+     > ![image](https://github.com/user-attachments/assets/b33ba161-bcf6-4dae-b6d9-f64f595273a1) 
+
+  5. Сгенерируйте документацию к модулю с помощью terraform-docs.
+     > [пример](https://github.com/ADNikulin/hw-04/blob/solution-2/requiremets.md)
+
 </details>
 
 ### Задание 3
