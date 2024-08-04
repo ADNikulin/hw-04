@@ -74,10 +74,20 @@
   <summary>Раскрыть</summary>
 
   1. Выведите список ресурсов в стейте.
-  2. Полностью удалите из стейта модуль vpc.
-  3. Полностью удалите из стейта модуль vm.
-  4. Импортируйте всё обратно. Проверьте terraform plan. Значимых(!!) изменений быть не должно.
-  Приложите список выполненных команд и скриншоты процессы.
+     > ![image](https://github.com/user-attachments/assets/e813d5bf-d5da-4bc1-bda7-3258f86a17d5)
+
+  3. Полностью удалите из стейта модуль vpc.
+     > ![image](https://github.com/user-attachments/assets/fc5048d6-5fd1-4cdb-95c7-6a51c9ec5e02)
+
+  5. Полностью удалите из стейта модуль vm.
+     > ![image](https://github.com/user-attachments/assets/e01d45ee-c8ed-434e-8af2-036bb0afa76f)
+
+  7. Импортируйте всё обратно. Проверьте terraform plan. Значимых(!!) изменений быть не должно.
+     > ![image](https://github.com/user-attachments/assets/d36f3441-de77-4c6f-9da7-de54c651c68a) \
+     > ![image](https://github.com/user-attachments/assets/19e017b6-f533-4d80-984b-eebfc085ddcd) \
+     > ![image](https://github.com/user-attachments/assets/86071a80-c12d-4b9b-91c7-a678bf573419) \
+     > ![image](https://github.com/user-attachments/assets/ed17998e-3ba8-4398-aba7-d3fcb0153421) \
+     > ![image](https://github.com/user-attachments/assets/08509649-c562-49ef-a15a-ae3a6d64cbd3)
 
 </details>
 
